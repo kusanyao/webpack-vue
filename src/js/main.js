@@ -1,13 +1,18 @@
+/**
+ * app
+ */
 
-
-import Vue from 'vue';
+import Vue   from 'vue';
+import content from '../components/layout/content.vue';
+import sidebar from '../components/layout/sidebar.vue';
 
 import '../css/main.css';
-import '../css/main.less';
+// import '../css/main.less';
 
-var app = new Vue({
+new Vue({
     el: '#app',
-    data: {
-        message: 'Hello Vue!'
+    components: {
+        'app-sidebar': sidebar,
+        'app-content': content,
     }
-});
+})

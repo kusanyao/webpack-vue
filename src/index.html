@@ -2,15 +2,13 @@
 <html>
 <head>
     <title>webpack-vue</title>
+    <link rel="shortcut icon" href="/favicon.ico">
 </head>
 <body>
-    <div id="jq-test">hello webpack-vue</div>
     <div id="app">
-        <div id="vue-test" v-html="message">hello webpack-vue</div>
+        <app-sidebar></app-sidebar>
+        <app-content></app-content>
     </div>
-    <div id="test-css">test-css red</div>
-    <div id="test-css-img">test-css red</div>
-    <div id="test-less">test-less #cccccc</div>
-    <script type="text/javascript" src="/bundle.js"></script>
+    <script src="/bundle.js"></script>
 </body>
 </html>

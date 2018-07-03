@@ -1,8 +1,14 @@
-#test-css{
-    color:red;
+html,body,div,ul,li{
+    margin: 0;
+    padding: 0;
 }
-
-#test-css-img{
-    height: 200px;
-    background: url(../img/labixiaoxin.jpg);
+ul li{
+    list-style:none
+}
+#app{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    left:0;
+    top:0;
 }

@@ -3,6 +3,7 @@
  */
 
 const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
     mode: 'development',
@@ -30,9 +31,13 @@ module.exports = {
                 use: [
                     { loader: 'url-loader', options: {limit: 500000}}
                 ]
-            }
+            },
+            {test: /\.vue$/, use: 'vue-loader'}
         ]
-    },  
+    },
+    plugins: [
+        new VueLoaderPlugin()
+    ],  
     resolve: {
         alias: {
             'vue': 'vue/dist/vue.js'
